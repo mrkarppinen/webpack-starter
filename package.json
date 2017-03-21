@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "NODE_ENV=production ./node_modules/.bin/webpack",
+    "dev-server": "./node_modules/.bin/webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +19,9 @@
     "bulma": "^0.3.1",
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "^2.0.0-rc.3",
+    "html-loader": "^0.4.5",
+    "html-webpack-exclude-assets-plugin": "0.0.5",
+    "html-webpack-plugin": "^2.28.0",
     "node-sass": "^4.5.0",
     "sass-loader": "^5.0.1",
     "style-loader": "^0.13.1",
